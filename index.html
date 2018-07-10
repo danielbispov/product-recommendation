@@ -20,15 +20,43 @@
                 if(http.readyState == 4 && http.status == 200) {
                     res = JSON.parse(http.responseText);
                     resSize = Object.keys(res).length;
+                    var carousel = document.getElementById('carousel');
 
                     for(var i=0; i<resSize; i++) {
-                        var elementAppend = document.getElementById('items-ul');
-                        var newItem = document.createElement("li");
+                        var newItem = document.createElement('div');
+                        var image = document.createElement('img');
+                        var description = document.createElement('p');
+                        var oldPrice = document.createElement('p');
+                        var price = document.createElement('p');
+                        var payment = document.createElement('p');
+
+                        description.textContent = res[i]['name'];
+                        if(res[i]['oldPrice'])
+                            oldPrice.textContent = `De: ${res[i]['oldPrice']}`;
+                        price.textContent = `Por: ${res[i]['price']}`;
+                        payment.textContent =
+                            res[i]['productInfo']['paymentConditions'];
 
                         newItem.setAttribute('class', 'carousel-item');
-                        elementAppend.appendChild(newItem);
+                        image.setAttribute('src', `http:${res[i]['imageName']}`);
 
-                        console.log(res[i]['imageName']);
+                        carousel.appendChild(newItem);
+                        newItem.appendChild(image);
+                        newItem.appendChild(description);
+                        if(res[i]['oldPrice'])
+                            newItem.appendChild(oldPrice);
+                        newItem.appendChild(price);
+                        newItem.appendChild(payment);
+                    }
+
+                    document.getElementById('buttonNext').onclick = () => {
+                        console.log(carousel.style.marginLeft);
+                        carousel.scrollLeft += 256;
+                    }
+
+                    document.getElementById('buttonPrev').onclick = () => {
+                        console.log(carousel.style.marginLeft);
+                        carousel.scrollLeft += -256;
                     }
                 }
             };
@@ -43,19 +71,18 @@
             <div class="container">
                 <a href="#" id="logo">Mega Store</a>
                 <ul>
-                    <li class="item"><a href="#">One</a></li>
-                    <li class="item"><a href="#">Two</a></li>
+                    <li class="item"><a href="#">Sobre a Mega Store</a></li>
+                    <li class="item"><a href="#">Black Friday 2018</a></li>
                 </ul>
             </div>
         </nav>
 
-        <div class="carousel">
-            <button></button>
-            <div class="items-holder">
-                <ul id="items-ul">
-                </ul>
-            <div>
-                <button></button>
-        </div>
+        <div class="container">
+            <button class="btn" id="buttonPrev">Anterior</button>
+                <div id="carousel">
+
+                </div>
+            <button class="btn" id="buttonNext">Próximo</button>
+        <div>
     </body>
 </html>
