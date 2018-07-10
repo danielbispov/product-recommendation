@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='pt'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Mega Store, a maior loja de eletrônicos">
+        <meta name="author" content="Daniel Vale">
+        <title>Mega Store</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+        <script>
+            const http = new XMLHttpRequest();
+            const url = 'http://localhost:5000/api/recommendation/1768629';
+            var res;
+            var resSize;
+
+            http.open('GET', url, true);
+            http.send();
+            http.onreadystatechange = () => {
+                if(http.readyState == 4 && http.status == 200) {
+                    res = JSON.parse(http.responseText);
+                    resSize = Object.keys(res).length;
+
+                    for(var i=0; i<resSize; i++) {
+                        var elementAppend = document.getElementById('items-ul');
+                        var newItem = document.createElement("li");
+
+                        newItem.setAttribute('class', 'carousel-item');
+                        elementAppend.appendChild(newItem);
+
+                        console.log(res[i]['imageName']);
+                    }
+                }
+            };
+
+
+
+
+        </script>
+    </head>
+    <body>
+        <nav class="header">
+            <div class="container">
+                <a href="#" id="logo">Mega Store</a>
+                <ul>
+                    <li class="item"><a href="#">One</a></li>
+                    <li class="item"><a href="#">Two</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="carousel">
+            <button></button>
+            <div class="items-holder">
+                <ul id="items-ul">
+                </ul>
+            <div>
+                <button></button>
+        </div>
+    </body>
+</html>
