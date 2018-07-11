@@ -15,7 +15,7 @@ http.onreadystatechange = () => {
         var a = document.createElement('a');
         a.textContent = "Não houve resposta do servidor, você o iniciou? Clique aqui para obter ajuda";
         a.setAttribute('class', 'highlight');
-        a.setAttribute('href', 'highlight');
+        a.setAttribute('href', 'https://github.com/danielbispov/product-recommendation');
         carousel.appendChild(a);
     }
 
