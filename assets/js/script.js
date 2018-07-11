@@ -23,11 +23,12 @@ http.onreadystatechange = () => {
             if(res[i]['oldPrice'])
                 oldPrice.textContent = `De: ${res[i]['oldPrice']}`;
             price.textContent = `Por: ${res[i]['price']}`;
-            payment.textContent =
+            payment.innerHTML =
                 res[i]['productInfo']['paymentConditions'];
 
             newItem.setAttribute('class', 'carousel-item');
             image.setAttribute('src', `http:${res[i]['imageName']}`);
+            price.setAttribute('class', 'highlight');
 
             carousel.appendChild(newItem);
             newItem.appendChild(image);

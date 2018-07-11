@@ -13,7 +13,7 @@
             "price":"R$ 499,00",
             "oldPrice":"R$ 599,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 41.58</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$41.58</strong>"
             }
          }
       },
@@ -26,7 +26,7 @@
             "price":"R$ 499,00",
             "oldPrice":"R$ 599,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 41.58</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$41.58</strong>"
             }
          },
          {
@@ -37,7 +37,7 @@
             "price":"R$ 499,00",
             "oldPrice":null,
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 41.58</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$41.58</strong>"
             }
          },
          {
@@ -48,7 +48,7 @@
             "price":"R$ 399,00",
             "oldPrice":"R$ 549,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 33.25</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$33.25</strong>"
             }
          },
          {
@@ -59,7 +59,7 @@
             "price":"R$ 379,00",
             "oldPrice":"R$ 499,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 31.58</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$31.58</strong>"
             }
          },
          {
@@ -70,7 +70,7 @@
             "price":"R$ 399,00",
             "oldPrice":"R$ 599,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 33.25</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$33.25</strong>"
             }
          },
          {
@@ -81,7 +81,7 @@
             "price":"R$ 399,00",
             "oldPrice":null,
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 33.25</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$33.25</strong>"
             }
          },
          {
@@ -92,7 +92,7 @@
             "price":"R$ 749,00",
             "oldPrice":null,
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 62.42</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$62.42</strong>"
             }
          },
          {
@@ -103,7 +103,7 @@
             "price":"R$ 329,00",
             "oldPrice":"R$ 399,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 27.42</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$27.42</strong>"
             }
          },
          {
@@ -114,7 +114,7 @@
             "price":"R$ 599,00",
             "oldPrice":"R$ 799,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 49.92</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$49.92</strong>"
             }
          },
          {
@@ -125,7 +125,7 @@
             "price":"R$ 349,00",
             "oldPrice":"R$ 599,00",
             "productInfo":{
-               "paymentConditions":"ou <strong>12X</strong> de <strong> 29.08</strong>"
+               "paymentConditions":"ou <strong>12X</strong> de <strong> R$29.08</strong>"
             }
          }
       ]
