@@ -1,6 +1,6 @@
 # Product Recommendation API and simple front-end
 
-A simple project containing an Node.js runtime environment API, which is responsible for returning an JSON object containing recommendation data for a reference product.
+A simple Node.js runtime environment API, which is responsible for returning an JSON object containing recommendation data for a reference product in order to be rendered in a HTML page.
 
 # Step-by-step first run
 To render the carousel, you can follow these steps:
