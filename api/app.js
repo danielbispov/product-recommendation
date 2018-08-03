@@ -5,7 +5,6 @@ const fs = require('fs');
 const port = process.env.PORT || 5000;
 app.use(cors());
 
-var recommendation;
 var data = fs.readFile('./data/data.json', (err, dt) => {
     if(err) throw err;
     data = JSON.parse(dt);
